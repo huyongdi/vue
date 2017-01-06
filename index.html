@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table id="table_test">
+    <thead>
+    <tr>
+        <th v-for="each_th in th">{{each_th}}</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td v-for="each_td in td">{{each_td}}</td>
+    </tr>
+    </tbody>
+</table>
+
+<a download="导出表格001.xls" href="#" id="test_a">点我导出</a>
+
+</body>
+
+<script src="plugin/jquery.min.js"></script>
+<script src="plugin/excelExport.js"></script>
+<script src="plugin/vue.js"></script>
+
+<script src="index.js"></script>
+</html>
